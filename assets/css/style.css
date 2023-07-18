@@ -63,20 +63,31 @@ section {
 }
 
 /* -----nav bar css----- */
-.navbar-collapse {
-    transition: all 0.3s ease-in-out;
-}
-.scroll-effect{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: 0.8s;
-    position: sticky;
+.header {
+    position: fixed;
     top: 0;
-    z-index: 33;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-collapse {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .scroll-effect {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .scroll-effect .navbar-collapse {
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.1) 0px 2px 10px;
     animation-name: slideDown;
     animation-delay: 5s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-duration: 5s;
-}
+  }
 @keyframes slideDown{
     form{
         transform: translateY(-100%);
