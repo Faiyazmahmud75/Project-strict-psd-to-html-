@@ -115,7 +115,7 @@ a.nav-link {
 
 /* ----Home section CSS---- */
 section#home {
-    background: url(/assets/images/home-bg.jpg) center center/cover;
+    background: url(../assets/images/home-bg.jpg) center center/cover;
     height: 80vh;
     padding: 40px 0;
 }
@@ -283,7 +283,7 @@ section#work {
 
 /* ---contact section CSS--- */
 section#contact {
-    background: url(/assets/images/form-bg.jpg) center center / cover;
+    background: url(../assets/images/form-bg.jpg) center center / cover;
     padding: 50px 0 40px;
 }
 
