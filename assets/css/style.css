@@ -72,8 +72,18 @@ header.menuBar {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.8s;
     position: sticky;
-    top: 0;
-    z-index: 33;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    animation: ease-out 0.3s slideDown;
+}
+
+@keyframes slideDown{
+    from {
+        transform: translateY(-100%)
+    }
+    to {transform: translateY(0%);}
 }
 
 .navbar {
@@ -130,15 +140,19 @@ section#home {
     padding-top: 15px;
 }
 
-.hero-content button {
+.hero-content a.btn {
     border: 1px solid var(--primary);
     color: white;
+    font-size: 17px;
+    position: absolute;
+    left: 50%;
+    bottom: 80px;
+    transform: translateX(-50%);
     border-radius: 2px;
-    margin-top: 30px;
     transition: 0.4s;
 }
 
-.hero-content button:hover {
+.hero-content a.btn:hover {
     background: var(--primary);
     border-color: var(--primary);
 }
